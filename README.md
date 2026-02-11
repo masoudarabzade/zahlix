@@ -63,7 +63,7 @@ ZAHLIX offers 8 different practice modes to cover all aspects of German numbers:
 
 ## Key Features:
 
-- 🎧 **500+ Authentic German Audio Files** – Real pronunciation by native speakers
+- 🎧 **12000+ Authentic German Audio Files** – Real pronunciation by native speakers
 - 🎚️ **3 Difficulty Levels** – Easy, Medium, Hard with adaptive number ranges
 - 📱 **8 Practice Modes** – Comprehensive coverage of German number usage
 - ⚡ **Adjustable Playback Speed** – 0.5x to 2.0x for gradual learning
@@ -248,7 +248,7 @@ ZAHLIX دارای ۸ حالت تمرینی مختلف برای پوشش کامل
 
 ## ویژگی‌های کلیدی:
 
-- 🎧 **بیش از ۵۰۰ فایل صوتی اصیل آلمانی** – تلفظ واقعی توسط گویندگان بومی
+- 🎧 **بیش از 12000 فایل صوتی اصیل آلمانی** – تلفظ واقعی توسط گویندگان بومی
 - 🎚️ **۳ سطح سختی** – آسان، متوسط، سخت با محدوده‌های تطبیقی
 - 📱 **۸ حالت تمرین** – پوشش کامل کاربرد اعداد در آلمانی
 - ⚡ **قابلیت تنظیم سرعت پخش** – ۰.۵x تا ۲.۰x برای یادگیری تدریجی
@@ -362,3 +362,4 @@ zahlix/
 **یادگیری لذت‌بخشی داشته باشید!** 🚀
 
 </div>
+
