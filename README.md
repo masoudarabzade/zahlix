@@ -1,331 +1,364 @@
-<!-- Title - LTR for badges -->
+<!-- ENGLISH SECTION - LTR -->
 <div dir="ltr">
 
-# ZAHLIX - German Numbers Practice
+# ZAHLIX - German Numbers Listening Practice
 
-[![Live Demo](https://img.shields.io/badge/demo-online-green?style=for-the-badge&logo=vercel)](https://zahlix.42web.io)
-[![GitHub stars](https://img.shields.io/github/stars/masoudarabzade/zahlix?style=for-the-badge&logo=github)](https://github.com/masoudarabzade/zahlix/stargazers)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
-[![Mobile Friendly](https://img.shields.io/badge/Responsive-Yes-brightgreen?style=for-the-badge)](https://zahlix.42web.io)
+ZAHLIX is an interactive web application designed to help learners improve their listening comprehension of German numbers. Whether you're a beginner or advanced, ZAHLIX provides an engaging way to practice numbers, prices, dates, and times in German.
 
-</div>
+**Live Demo:** [https://zahlix.42web.io](https://zahlix.42web.io)
 
-<!-- Separator -->
----
-
-<!-- Live Demo - LTR -->
-<div dir="ltr">
-
-## 🌐 Live Demo | Live-Demo | نمایش زنده
-
-**👉 [https://zahlix.42web.io](https://zahlix.42web.io)**
-
-</div>
+![GitHub stars](https://img.shields.io/github/stars/masoudarabzade/zahlix?style=flat-square&logo=github)
+![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
 ---
 
-<!-- German Section - LTR -->
-<div dir="ltr">
+## Files in the Current Project:
 
-## 🇩🇪 Deutsch
+### 1. HTML Files:
 
-### 📌 Über das Projekt
+**index.html**: The main page of the ZAHLIX application. It includes the start screen, difficulty selection, mode selection, and practice session screens. The structure supports multilingual UI (German, English, Persian) and dark/light mode theming.
 
-**ZAHLIX** ist eine interaktive Webanwendung zum Üben und Verbessern des Hörverständnisses deutscher Zahlen. Egal ob Anfänger oder Fortgeschrittene – mit ZAHLIX kannst du Zahlen, Preise, Datumsangaben und Uhrzeiten auf Deutsch hören und lernen.
+### 2. CSS Files:
 
-### ✨ Hauptfunktionen
+**styles.css**: Defines the complete visual design of ZAHLIX. It uses CSS variables for theming, Flexbox and Grid for responsive layouts, and includes dedicated styles for RTL (Persian) support. The design is fully responsive across mobile, tablet, and desktop devices.
 
-- 🎧 **Hörverständnis üben** – Authentische deutsche Zahlen als Audiodateien
-- 🎚️ **Drei Schwierigkeitsgrade** – Einfach, Mittel, Schwer
-- 📅 **Verschiedene Übungsmodi**:
-  - Ganze Zahlen (0–9999)
-  - Dezimalzahlen
-  - Datumsangaben & Datumsbereiche
-  - Uhrzeiten & Zeiträume
-  - Preise (Euro)
-  - Jahreszahlen
-- ⚡ **Individuelle Abspielgeschwindigkeit** – 0.5x bis 2.0x
-- 🌓 **Dark/Light Mode** – Augenschonendes Design
-- 📱 **Responsive Design** – Perfekt auf Handy, Tablet & PC
-- 🗣️ **Mehrsprachige Benutzeroberfläche** – Deutsch, Englisch, Persisch (Farsi)
+### 3. JavaScript Files:
 
-### 🎯 Zielgruppe
+**script.js**: The main application logic. Manages the practice sessions, audio playback, answer validation, difficulty levels, user preferences, and screen navigation.
 
-- Deutschlernende (A1–B2)
-- Lehrer und Sprachschulen
-- Alle, die ihr Hörverständnis verbessern möchten
+**sounds.js**: Handles all audio-related functionality including playback speed control (0.5x to 2.0x), sound file management, and audio caching.
 
-### 🚀 Live-Demo
+**file-list.js**: Manages the list of available audio files across 8 different practice modes.
 
-👉 **[https://zahlix.42web.io](https://zahlix.42web.io)** – Jetzt kostenlos testen!
-
-</div>
+**lang/translations.js**: Contains all multilingual content for German, English, and Persian interfaces.
 
 ---
 
-<!-- English Section - LTR -->
-<div dir="ltr">
+## Practice Modes:
 
-## 🇬🇧 English
+ZAHLIX offers 8 different practice modes to cover all aspects of German numbers:
 
-### 📌 About the Project
+| Mode | Description | Sample |
+|------|-------------|--------|
+| **Integers** | Single and multi-digit numbers | 123 |
+| **Decimals** | Decimal numbers | 12.5 |
+| **Dates** | German date formats | 01.oktober |
+| **Date Ranges** | Date periods | 01.oktober bis 15.dezember |
+| **Times** | German time expressions | 14:30 |
+| **Time Ranges** | Time periods | 10:00 bis 14:30 |
+| **Prices** | Euro amounts | 12.50€ |
+| **Years** | Year numbers | 2023 |
 
-**ZAHLIX** is an interactive web application designed to help learners improve their listening comprehension of German numbers. Whether you're a beginner or advanced, ZAHLIX provides an engaging way to practice numbers, prices, dates, and times in German.
+---
 
-### ✨ Key Features
+## Difficulty Levels:
 
-- 🎧 **Listening Practice** – Real German number audio files
-- 🎚️ **Three Difficulty Levels** – Easy, Medium, Hard
-- 📅 **Multiple Practice Modes**:
-  - Integers (0–9999)
-  - Decimal Numbers
-  - Dates & Date Ranges
-  - Times & Time Ranges
-  - Prices (Euro)
-  - Years
-- ⚡ **Adjustable Playback Speed** – 0.5x to 2.0x
-- 🌓 **Dark/Light Mode** – Eye-friendly interface
-- 📱 **Fully Responsive** – Works on mobile, tablet & desktop
+| Level | Number Range | Available Modes |
+|-------|-------------|-----------------|
+| **Easy** | 0-99 | Integers, Dates, Times, Prices, Years |
+| **Medium** | 0-999 | All 8 modes |
+| **Hard** | 10-9999 | All 8 modes |
+
+---
+
+## Key Features:
+
+- 🎧 **500+ Authentic German Audio Files** – Real pronunciation by native speakers
+- 🎚️ **3 Difficulty Levels** – Easy, Medium, Hard with adaptive number ranges
+- 📱 **8 Practice Modes** – Comprehensive coverage of German number usage
+- ⚡ **Adjustable Playback Speed** – 0.5x to 2.0x for gradual learning
+- 🌓 **Dark/Light Mode** – Eye-friendly interface for day and night
+- 📱 **Fully Responsive** – Perfect on mobile, tablet, and desktop
 - 🗣️ **Multilingual UI** – German, English, Persian (Farsi)
-
-### 🎯 Target Audience
-
-- German language learners (A1–B2)
-- Teachers and language schools
-- Anyone wanting to improve German listening skills
-
-### 🚀 Live Demo
-
-👉 **[https://zahlix.42web.io](https://zahlix.42web.io)** – Try it now for free!
-
-</div>
+- 💾 **Persistent Settings** – Saves theme, language, and difficulty preferences
+- ⭐ **GitHub Integration** – Real-time star counter via GitHub API
 
 ---
 
-<!-- Persian Section - RTL -->
-<div dir="rtl">
-
-## 🇮🇷 فارسی
-
-### 📌 درباره پروژه
-
-**ZAHLIX** یک برنامه وب تعاملی برای تمرین و تقویت مهارت شنیداری اعداد آلمانی است. چه مبتدی باشید و چه پیشرفته، ZAHLIX روشی جذاب برای تمرین اعداد، قیمت‌ها، تاریخ‌ها و ساعت‌ها به زبان آلمانی ارائه می‌دهد.
-
-### ✨ ویژگی‌های اصلی
-
-- 🎧 **تمرین شنیداری** – فایل‌های صوتی واقعی اعداد آلمانی
-- 🎚️ **سه سطح سختی** – آسان، متوسط، سخت
-- 📅 **حالت‌های تمرینی متنوع**:
-  - اعداد صحیح (۰–۹۹۹۹)
-  - اعداد اعشاری
-  - تاریخ‌ها و بازه‌های تاریخی
-  - ساعت‌ها و بازه‌های زمانی
-  - قیمت‌ها (یورو)
-  - سال‌ها
-- ⚡ **قابلیت تنظیم سرعت پخش** – ۰.۵x تا ۲.۰x
-- 🌓 **حالت شب/روز** – طراحی مناسب برای چشم
-- 📱 **طراحی واکنش‌گرا** – قابل استفاده در موبایل، تبلت و کامپیوتر
-- 🗣️ **رابط کاربری چندزبانه** – آلمانی، انگلیسی، فارسی
-
-### 🎯 مخاطبان هدف
-
-- زبان‌آموزان آلمانی (سطوح A1 تا B2)
-- مدرسان و آموزشگاه‌های زبان
-- تمام کسانی که می‌خواهند مهارت شنیداری آلمانی خود را تقویت کنند
-
-### 🚀 نمایش زنده
-
-👉 **[https://zahlix.42web.io](https://zahlix.42web.io)** – همین حالا رایگان امتحان کنید!
-
-</div>
-
----
-
-<!-- Tech Stack - LTR -->
-<div dir="ltr">
-
-## 🛠️ Technologie-Stack | Technology Stack | تکنولوژی‌ها
-
-| Bereich / Area / بخش | Technologie / Technology / تکنولوژی |
-|---------------------|-------------------------------------|
-| **Frontend** | HTML5, CSS3, JavaScript (ES6+) |
-| **Styling** | CSS Variables, Flexbox, Grid |
-| **Icons** | Font Awesome 6 |
-| **Fonts** | Inter, Vazir (Persian) |
-| **Hosting** | InfinityFree (PHP 8.x) |
-| **Version Control** | Git, GitHub |
-| **API** | GitHub REST API (Star counter) |
-
-</div>
-
----
-
-<!-- Project Structure - LTR (code block should be LTR) -->
-<div dir="ltr">
-
-## 📁 Projektstruktur | Project Structure | ساختار پروژه
+## Project Structure:
 
 ```
 zahlix/
-├── 📄 index.html              # Hauptseite / Main page / صفحه اصلی
-├── 📄 styles.css              # Alle Styles / All styles / استایل‌ها
-├── 📄 script.js               # Hauptlogik / Main logic / منطق اصلی
-├── 📄 sounds.js               # Audio-Manager / Audio manager / مدیریت صدا
-├── 📄 file-list.js           # Dateiliste / File list / لیست فایل‌ها
-├── 📄 .gitignore             # Git Ignore
-├── 📄 README.md              # Dokumentation / Documentation / مستندات
-├── 📁 lang/                  # Übersetzungen / Translations / ترجمه‌ها
-│   └── 📄 translations.js
-├── 📁 file/                  # Audiodateien / Audio files / فایل‌های صوتی
-│   ├── 📁 number/
-│   ├── 📁 date/
-│   ├── 📁 time/
-│   ├── 📁 preis/
-│   └── 📁 jahres/
-├── 📁 img/                   # Bilder / Images / تصاویر
-│   ├── 📄 logo.png
-│   └── 📄 icon.ico
-└── 📁 server/                # PHP API
-    └── 📄 get-files.php
+├── index.html              # Main application page
+├── styles.css              # Complete styling system
+├── script.js               # Core application logic
+├── sounds.js               # Audio playback manager
+├── file-list.js            # Audio files registry
+├── .gitignore              # Version control ignore file
+├── README.md               # Project documentation
+├── LICENSE                 # MIT License
+├── lang/                   # Multilingual translations
+│   └── translations.js     # German, English, Persian texts
+├── file/                   # Audio files directory
+│   ├── number/             # Integer and decimal numbers
+│   ├── date/               # Dates and date ranges
+│   ├── time/               # Times and time ranges
+│   ├── preis/              # Euro prices
+│   └── jahres/             # Years
+├── img/                    # Image assets
+│   ├── logo.png
+│   └── icon.ico
+└── server/                 # Backend API (optional)
+    └── get-files.php       # PHP file server
 ```
 
-</div>
-
 ---
 
-<!-- Local Setup - German/English LTR, Persian RTL -->
-<div dir="ltr">
+## Local Setup:
 
-## 🚀 Lokale Installation | Local Setup
-
-### 🇩🇪 Deutsch
-1. Repository klonen:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/masoudarabzade/zahlix.git
    cd zahlix
    ```
-2. Mit einem lokalen Server öffnen (z.B. Live Server in VS Code)
-3. Oder Datei direkt im Browser öffnen
 
-### 🇬🇧 English
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/masoudarabzade/zahlix.git
-   cd zahlix
-   ```
-2. Open with a local server (e.g., Live Server in VS Code)
-3. Or open the HTML file directly in your browser
+2. **Open with a local server:**
+   - Use Live Server in VS Code
+   - Or run with PHP: `php -S localhost:8000`
+   - Or open index.html directly in browser
 
-</div>
-
-<div dir="rtl">
-
-### 🇮🇷 فارسی
-۱. کلون کردن مخزن:
-   ```bash
-   git clone https://github.com/masoudarabzade/zahlix.git
-   cd zahlix
-   ```
-۲. باز کردن با سرور محلی (مثل Live Server در VS Code)
-۳. یا باز کردن مستقیم فایل HTML در مرورگر
-
-</div>
+3. **Start practicing!**
+   - Select difficulty level
+   - Choose practice modes
+   - Listen and answer
 
 ---
 
-<!-- Contributing - Mixed RTL/LTR -->
-<div dir="ltr">
+## Technical Stack:
 
-## 🤝 Beitragen | Contributing
-
-🇩🇪 Beiträge sind willkommen! Bitte erstelle einen Issue oder Pull Request.
-
-🇬🇧 Contributions are welcome! Please open an issue or pull request.
-
-</div>
-
-<div dir="rtl">
-
-🇮🇷 مشارکت شما پذیرفته می‌شود! لطفاً Issue یا Pull Request ایجاد کنید.
-
-</div>
+| Component | Technology |
+|-----------|------------|
+| **Frontend** | HTML5, CSS3, JavaScript (ES6+) |
+| **Styling** | CSS Variables, Flexbox, Grid |
+| **Icons** | Font Awesome 6 |
+| **Fonts** | Inter (Latin), Vazir (Persian) |
+| **Audio** | Web Audio API |
+| **Hosting** | InfinityFree (PHP 8.x) |
+| **Version Control** | Git, GitHub |
+| **API** | GitHub REST API |
 
 ---
 
-<!-- License - Mixed RTL/LTR -->
-<div dir="ltr">
+## Contributing:
 
-## 📄 Lizenz | License
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-**MIT License** – Siehe [LICENSE](LICENSE) Datei für Details.
-
-**MIT License** – See [LICENSE](LICENSE) file for details.
-
-</div>
-
-<div dir="rtl">
-
-**مجوز MIT** – برای جزئیات به فایل [LICENSE](LICENSE) مراجعه کنید.
-
-</div>
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ---
 
-<!-- Developer - LTR for badges, RTL for Persian -->
-<div dir="ltr">
+## License:
 
-## 👨‍💻 Entwickler | Developer
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Developer:
 
 **Masoud Arabzadeh**
 
 [![Telegram](https://img.shields.io/badge/Telegram-@mrx2024-26A5E4?style=flat-square&logo=telegram)](https://t.me/mrx2024)
 [![GitHub](https://img.shields.io/badge/GitHub-@masoudarabzade-181717?style=flat-square&logo=github)](https://github.com/masoudarabzade)
 
+---
+
+## Star on GitHub:
+
+If you find this project helpful, please give it a star on GitHub! ⭐
+
+[**👉 Star ZAHLIX on GitHub**](https://github.com/masoudarabzade/zahlix)
+
+---
+
+**Happy Learning!** 🚀
+
 </div>
 
+---
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- PERSIAN SECTION - RTL -->
+<!-- ---------------------------------------------------------------------- -->
+
 <div dir="rtl">
+
+# ZAHLIX - تمرین شنیداری اعداد آلمانی
+
+**ZAHLIX** یک برنامه وب تعاملی برای تمرین و تقویت مهارت شنیداری اعداد آلمانی است. چه مبتدی باشید و چه پیشرفته، ZAHLIX روشی جذاب برای تمرین اعداد، قیمت‌ها، تاریخ‌ها و ساعت‌ها به زبان آلمانی ارائه می‌دهد.
+
+**نمایش زنده:** [https://zahlix.42web.io](https://zahlix.42web.io)
+
+![GitHub stars](https://img.shields.io/github/stars/masoudarabzade/zahlix?style=flat-square&logo=github)
+![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+
+---
+
+## فایل‌های موجود در پروژه:
+
+### ۱. فایل‌های HTML:
+
+**index.html**: صفحه اصلی برنامه ZAHLIX. شامل صفحه شروع، انتخاب سطح سختی، انتخاب حالت تمرین و صفحه تمرین اصلی است. ساختار این فایل از رابط کاربری سه‌زبانه (آلمانی، انگلیسی، فارسی) و تم شب/روز پشتیبانی می‌کند.
+
+### ۲. فایل‌های CSS:
+
+**styles.css**: طراحی کامل ظاهری ZAHLIX را تعریف می‌کند. از متغیرهای CSS برای تم‌بندی، Flexbox و Grid برای چیدمان واکنش‌گرا استفاده می‌کند و شامل استایل‌های اختصاصی برای پشتیبانی از زبان فارسی (RTL) است. طراحی کاملاً واکنش‌گرا بوده و در موبایل، تبلت و دسکتاپ به خوبی نمایش داده می‌شود.
+
+### ۳. فایل‌های JavaScript:
+
+**script.js**: منطق اصلی برنامه است. جلسات تمرین، پخش صدا، اعتبارسنجی پاسخ‌ها، سطوح سختی، تنظیمات کاربر و ناوبری بین صفحات را مدیریت می‌کند.
+
+**sounds.js**: تمام عملکردهای مرتبط با صدا از جمله کنترل سرعت پخش (۰.۵x تا ۲.۰x)، مدیریت فایل‌های صوتی و کش کردن صداها را انجام می‌دهد.
+
+**file-list.js**: لیست فایل‌های صوتی موجود در ۸ حالت مختلف تمرینی را مدیریت می‌کند.
+
+**lang/translations.js**: تمام محتوای چندزبانه برای رابط‌های آلمانی، انگلیسی و فارسی را شامل می‌شود.
+
+---
+
+## حالت‌های تمرینی:
+
+ZAHLIX دارای ۸ حالت تمرینی مختلف برای پوشش کامل اعداد آلمانی است:
+
+| حالت تمرین | توضیحات | مثال |
+|------------|--------|------|
+| **اعداد صحیح** | اعداد یک تا چند رقمی | ۱۲۳ |
+| **اعداد اعشاری** | اعداد با ممیز | ۱۲.۵ |
+| **تاریخ** | فرمت تاریخ آلمانی | ۰۱.اکتبر |
+| **بازه تاریخی** | بازه‌های زمانی | ۰۱.اکتبر تا ۱۵.دسامبر |
+| **ساعت** | بیان زمان به آلمانی | ۱۴:۳۰ |
+| **بازه زمانی** | بازه‌های ساعتی | ۱۰:۰۰ تا ۱۴:۳۰ |
+| **قیمت** | مبالغ به یورو | ۱۲.۵۰€ |
+| **سال** | اعداد سال | ۲۰۲۳ |
+
+---
+
+## سطوح سختی:
+
+| سطح | محدوده اعداد | حالت‌های قابل دسترس |
+|-----|-------------|---------------------|
+| **آسان** | ۰-۹۹ | اعداد صحیح، تاریخ، ساعت، قیمت، سال |
+| **متوسط** | ۰-۹۹۹ | هر ۸ حالت |
+| **سخت** | ۱۰-۹۹۹۹ | هر ۸ حالت |
+
+---
+
+## ویژگی‌های کلیدی:
+
+- 🎧 **بیش از ۵۰۰ فایل صوتی اصیل آلمانی** – تلفظ واقعی توسط گویندگان بومی
+- 🎚️ **۳ سطح سختی** – آسان، متوسط، سخت با محدوده‌های تطبیقی
+- 📱 **۸ حالت تمرین** – پوشش کامل کاربرد اعداد در آلمانی
+- ⚡ **قابلیت تنظیم سرعت پخش** – ۰.۵x تا ۲.۰x برای یادگیری تدریجی
+- 🌓 **حالت شب/روز** – طراحی مناسب برای چشم در روز و شب
+- 📱 **طراحی کاملاً واکنش‌گرا** – عالی در موبایل، تبلت و کامپیوتر
+- 🗣️ **رابط کاربری سه‌زبانه** – آلمانی، انگلیسی، فارسی
+- 💾 **ذخیره تنظیمات** – تم، زبان و سطح سختی ذخیره می‌شود
+- ⭐ **ادغام با گیت‌هاب** – نمایش تعداد واقعی ستاره‌ها با GitHub API
+
+---
+
+## ساختار پروژه:
+
+```
+zahlix/
+├── index.html              # صفحه اصلی برنامه
+├── styles.css              # سیستم استایل‌دهی کامل
+├── script.js               # منطق اصلی برنامه
+├── sounds.js               # مدیریت پخش صدا
+├── file-list.js            # ثبت فایل‌های صوتی
+├── .gitignore              # فایل نادیده‌گیری گیت
+├── README.md               # مستندات پروژه
+├── LICENSE                 # مجوز MIT
+├── lang/                   # ترجمه‌های چندزبانه
+│   └── translations.js     # متون آلمانی، انگلیسی، فارسی
+├── file/                   # دایرکتوری فایل‌های صوتی
+│   ├── number/             # اعداد صحیح و اعشاری
+│   ├── date/               # تاریخ‌ها و بازه‌های تاریخی
+│   ├── time/               # ساعت‌ها و بازه‌های زمانی
+│   ├── preis/              # قیمت‌ها به یورو
+│   └── jahres/             # سال‌ها
+├── img/                    # تصاویر
+│   ├── logo.png
+│   └── icon.ico
+└── server/                 # API سمت سرور (اختیاری)
+    └── get-files.php       # سرور فایل PHP
+```
+
+---
+
+## نصب محلی:
+
+۱. **کلون کردن مخزن:**
+   ```bash
+   git clone https://github.com/masoudarabzade/zahlix.git
+   cd zahlix
+   ```
+
+۲. **اجرا با سرور محلی:**
+   - استفاده از Live Server در VS Code
+   - یا اجرا با PHP: `php -S localhost:8000`
+   - یا باز کردن مستقیم index.html در مرورگر
+
+۳. **شروع تمرین:**
+   - انتخاب سطح سختی
+   - انتخاب حالت‌های تمرین
+   - گوش دادن و پاسخ‌دهی
+
+---
+
+## تکنولوژی‌های استفاده شده:
+
+| بخش | تکنولوژی |
+|-----|----------|
+| **فرانت‌اند** | HTML5, CSS3, JavaScript (ES6+) |
+| **استایل‌دهی** | CSS Variables, Flexbox, Grid |
+| **آیکون‌ها** | Font Awesome 6 |
+| **فونت‌ها** | Inter (لاتین), وزیر (فارسی) |
+| **صدا** | Web Audio API |
+| **هاست** | InfinityFree (PHP 8.x) |
+| **ورژن کنترل** | Git, GitHub |
+| **API** | GitHub REST API |
+
+---
+
+## مشارکت:
+
+مشارکت شما پذیرفته می‌شود! لطفاً Pull Request ارسال کنید.
+
+۱. مخزن را Fork کنید
+۲. برنچ ویژگی خود را ایجاد کنید (`git checkout -b feature/amazing-feature`)
+۳. تغییرات خود را Commit کنید (`git commit -m 'Add some amazing feature'`)
+۴. برنچ خود را Push کنید (`git push origin feature/amazing-feature`)
+۵. Pull Request باز کنید
+
+---
+
+## مجوز:
+
+این پروژه تحت مجوز MIT منتشر شده است - برای جزئیات بیشتر فایل [LICENSE](LICENSE) را مشاهده کنید.
+
+---
+
+## توسعه‌دهنده:
 
 **مسعود عرب‌زاده**
 
-</div>
+[![Telegram](https://img.shields.io/badge/Telegram-@mrx2024-26A5E4?style=flat-square&logo=telegram)](https://t.me/mrx2024)
+[![GitHub](https://img.shields.io/badge/GitHub-@masoudarabzade-181717?style=flat-square&logo=github)](https://github.com/masoudarabzade)
 
 ---
 
-<!-- GitHub Stars - Mixed -->
-<div dir="ltr">
+## ستاره در گیت‌هاب:
 
-## ⭐ GitHub Stars
+اگر این پروژه را مفید می‌دانید، لطفاً در گیت‌هاب به آن ستاره دهید! ⭐
 
-🇩🇪 Wenn dir dieses Projekt gefällt, gib ihm bitte einen ⭐ auf GitHub!
-
-🇬🇧 If you like this project, please give it a ⭐ on GitHub!
-
-**[👉 Star on GitHub](https://github.com/masoudarabzade/zahlix)**
-
-</div>
-
-<div dir="rtl">
-
-🇮🇷 اگر این پروژه را دوست دارید، لطفاً در گیت‌هاب به آن ⭐ دهید!
-
-**[👉 ستاره دادن](https://github.com/masoudarabzade/zahlix)**
-
-</div>
+[**👉 ستاره دادن به ZAHLIX در گیت‌هاب**](https://github.com/masoudarabzade/zahlix)
 
 ---
 
-<!-- Footer - Mixed -->
-<div dir="ltr">
-
-**🇩🇪 Viel Spaß beim Lernen!**  
-**🇬🇧 Happy Learning!**  
+**یادگیری لذت‌بخشی داشته باشید!** 🚀
 
 </div>
-
-<div dir="rtl">
-
-**🇮🇷 یادگیری لذت‌بخشی داشته باشید!** 🚀
-
-</div> 
- 
-
