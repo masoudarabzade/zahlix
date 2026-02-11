@@ -1,0 +1,71 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.log
+*.tmp
+*.temp
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+.project
+.classpath
+.settings/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Vercel
+.vercel
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# PHP
+*.log
+*.cache
+*.pid
+*.seed
+*.pid.lock
+
+# Audio files cache
+sounds/cache/
+file-list-cache.json
+
+# Local configuration
+config.local.php
+*.backup
+*.bak
+
+# Temporary files
+*.swp
+*.swo
+*~
+*.old
+*.orig
+
+# Project specific
+/dist
+/build
+/coverage
+
+# GitHub Pages
+/docs
+/_site
+
+# Don't ignore audio files directory (but ignore cache)
+!file/
+file/*/cache/

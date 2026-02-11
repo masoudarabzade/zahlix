@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAHLIX | German Numbers Practice | تمرین اعداد آلمانی</title>
+    
+    <!-- CDN Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode" data-lang="de">
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <div class="mobile-header-left">
+            <div class="language-selector">
+                <select id="languageDropdown" class="language-dropdown">
+                    <option value="de">Deutsch 🇩🇪</option>
+                    <option value="en">English 🇺🇸</option>
+                    <option value="fa">فارسی 🇮🇷</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="mobile-header-center">
+            <div class="mobile-logo mobile-logo-glass">
+                <img src="img/logo.png" alt="Zahlix Logo" class="logo-image">
+            </div>
+        </div>
+        
+        <div class="mobile-header-right">
+            <div class="theme-toggle">
+                <button class="theme-btn" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Desktop Controls -->
+    <div class="desktop-controls">
+        <div class="language-selector">
+            <select id="languageDropdownDesktop" class="language-dropdown">
+                <option value="de">Deutsch 🇩🇪</option>
+                <option value="en">English 🇺🇸</option>
+                <option value="fa">فارسی 🇮🇷</option>
+            </select>
+        </div>
+        
+        <div class="theme-toggle">
+            <button class="theme-btn" id="themeToggleDesktop">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Start Screen -->
+        <section id="startScreen" class="screen active">
+            <div class="start-content">
+                <div class="logo logo-glass">
+                    <img src="img/logo.png" alt="Zahlix Logo" class="logo-image-large">
+                    <h1 class="logo-text">ZAHLIX</h1>
+                    <p class="logo-subtitle" data-key="appTitle">German Numbers Practice</p>
+                </div>
+                
+                <p class="subtitle" data-key="appDescription">
+                    Improve your listening skills in recognizing German numbers
+                </p>
+                
+                <button class="btn-start" id="startBtn">
+                    <i class="fas fa-play-circle"></i>
+                    <span data-key="startButton">Start Practice</span>
+                </button>
+                
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-headphones"></i>
+                        <span data-key="feature1">Listening Practice</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span data-key="feature2">Responsive</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-language"></i>
+                        <span data-key="feature3">Trilingual</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-adjust"></i>
+                        <span data-key="feature4">Dark/Light Mode</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <span data-key="feature5">Difficulty Levels</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Difficulty Selection Screen -->
+        <section id="difficultySelectionScreen" class="screen">
+            <!-- Mobile Back Button - First element after header -->
+            <button class="btn-back mobile-only" id="mobileBackToStartFromDifficulty">
+                <i class="fas fa-arrow-left"></i>
+                <span data-key="back">Back</span>
+            </button>
+            
+            <div class="screen-header">
+                <!-- Desktop Back Button -->
+                <button class="btn-back desktop-only" id="backToStartFromDifficulty">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-key="back">Back</span>
+                </button>
+                <h2 data-key="selectDifficulty">Select Difficulty Level</h2>
+                <p class="screen-description" data-key="difficultyDescription">
+                    Choose your preferred difficulty level (Easy, Medium, or Hard)
+                </p>
+            </div>
+            
+            <div class="difficulty-selection">
+                <div class="difficulty-level active" data-difficulty="easy">
+                    <div class="difficulty-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="difficulty-info">
+                        <h3 data-key="easyLevel">Easy</h3>
+                        <p data-key="easyDescription">Perfect for beginners. Start with basic numbers.</p>
+                    </div>
+                    <div class="difficulty-check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                
+                <div class="difficulty-level" data-difficulty="medium">
+                    <div class="difficulty-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="difficulty-info">
+                        <h3 data-key="mediumLevel">Medium</h3>
+                        <p data-key="mediumDescription">For intermediate learners. Challenge yourself with moderate numbers.</p>
+                    </div>
+                    <div class="difficulty-check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                
+                <div class="difficulty-level" data-difficulty="hard">
+                    <div class="difficulty-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="difficulty-info">
+                        <h3 data-key="hardLevel">Hard</h3>
+                        <p data-key="hardDescription">For advanced learners. Test your skills with complex numbers.</p>
+                    </div>
+                    <div class="difficulty-check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="difficulty-preview">
+                <h3 data-key="previewTitle">What's included in each level:</h3>
+                <div class="preview-content">
+                    <div class="preview-item">
+                        <i class="fas fa-sort-numeric-up"></i>
+                        <span data-key="integersPreview">Integers:</span>
+                        <span id="integersPreviewText">0-99</span>
+                    </div>
+                    <div class="preview-item">
+                        <i class="fas fa-divide"></i>
+                        <span data-key="decimalsPreview">Decimals:</span>
+                        <span id="decimalsPreviewText">Not available</span>
+                    </div>
+                    <div class="preview-item">
+                        <i class="fas fa-calendar"></i>
+                        <span data-key="datesPreview">Dates:</span>
+                        <span id="datesPreviewText">All dates</span>
+                    </div>
+                    <div class="preview-item">
+                        <i class="fas fa-calendar-week"></i>
+                        <span data-key="dateRangePreview">Date Ranges:</span>
+                        <span id="dateRangePreviewText">Not available</span>
+                    </div>
+                    <div class="preview-item">
+                        <i class="far fa-clock"></i>
+                        <span data-key="timePreview">Time:</span>
+                        <span id="timePreviewText">All times</span>
+                    </div>
+                    <div class="preview-item">
+                        <i class="fas fa-history"></i>
+                        <span data-key="timeRangePreview">Time Ranges:</span>
+                        <span id="timeRangePreviewText">Not available</span>
+                    </div>
+                    <div class="preview-item">
+                        <i class="fas fa-euro-sign"></i>
+                        <span data-key="pricePreview">Prices:</span>
+                        <span id="pricePreviewText">0.50-99.99€</span>
+                    </div>
+                    <div class="preview-item">
+                        <i class="fas fa-calendar"></i>
+                        <span data-key="yearPreview">Years:</span>
+                        <span id="yearPreviewText">All years</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn-primary" id="continueToModeSelectionBtn" data-key="continueButton">
+                Continue to Mode Selection
+            </button>
+        </section>
+        
+        <!-- Practice Mode Selection Screen -->
+        <section id="modeSelectionScreen" class="screen">
+            <!-- Mobile Back Button - First element after header -->
+            <button class="btn-back mobile-only" id="mobileBackToDifficultySelection">
+                <i class="fas fa-arrow-left"></i>
+                <span data-key="back">Back</span>
+            </button>
+            
+            <div class="screen-header">
+                <!-- Desktop Back Button -->
+                <button class="btn-back desktop-only" id="backToDifficultySelection">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-key="back">Back</span>
+                </button>
+                <h2 data-key="selectMode">Select Practice Mode</h2>
+                <p class="screen-description" data-key="modeDescription">
+                    Select one or more practice modes based on your selected difficulty level
+                </p>
+                <div class="current-difficulty-badge" id="currentDifficultyBadge">
+                    <i class="fas fa-chart-line"></i>
+                    <span id="currentDifficultyText">Easy</span>
+                </div>
+            </div>
+            
+            <div class="mode-selection">
+                <!-- Integer Mode -->
+                <div class="mode-option active" data-mode="integer">
+                    <div class="mode-icon">
+                        <i class="fas fa-sort-numeric-up"></i>
+                    </div>
+                    <div class="mode-info">
+                        <h3 data-key="integerMode">Integers</h3>
+                        <p class="mode-description" id="integerDescription">Single and double-digit numbers (0-99)</p>
+                    </div>
+                    <div class="mode-check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                
+                <!-- Decimal Mode -->
+                <div class="mode-option" data-mode="decimal">
+                    <div class="mode-icon">
+                        <i class="fas fa-divide"></i>
+                    </div>
+                    <div class="mode-info">
+                        <h3 data-key="decimalMode">Decimal Numbers</h3>
+                        <p class="mode-description" id="decimalDescription">Not available in Easy mode</p>
+                    </div>
+                    <div class="mode-check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                
+                <!-- Date Mode -->
+                <div class="mode-option active" data-mode="date">
+                    <div class="mode-icon">
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <div class="mode-info">
+                        <h3 data-key="dateMode">Date</h3>
+                        <p class="mode-description" id="dateDescription">All German dates</p>
+                    </div>
+                    <div class="mode-check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                
+                <!-- Date Range Mode -->
+                <div class="mode-option" data-mode="dateRange">
+                    <div class="mode-icon">
+                        <i class="fas fa-calendar-week"></i>
+                    </div>
+                    <div class="mode-info">
+                        <h3 data-key="dateRangeMode">Date Range</h3>
+                        <p class="mode-description" id="dateRangeDescription">Not available in Easy mode</p>
+                    </div>
+                    <div class="mode-check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                
+                <!-- Time Mode -->
+                <div class="mode-option active" data-mode="time">
+                    <div class="mode-icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div class="mode-info">
+                        <h3 data-key="timeMode">Time</h3>
+                        <p class="mode-description" id="timeDescription">All German time expressions</p>
+                    </div>
+                    <div class="mode-check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                
+                <!-- Time Range Mode -->
+                <div class="mode-option" data-mode="timeRange">
+                    <div class="mode-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <div class="mode-info">
+                        <h3 data-key="timeRangeMode">Time Range</h3>
+                        <p class="mode-description" id="timeRangeDescription">Not available in Easy mode</p>
+                    </div>
+                    <div class="mode-check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                
+                <!-- Price Mode -->
+                <div class="mode-option active" data-mode="price">
+                    <div class="mode-icon">
+                        <i class="fas fa-euro-sign"></i>
+                    </div>
+                    <div class="mode-info">
+                        <h3 data-key="priceMode">Price</h3>
+                        <p class="mode-description" id="priceDescription">Single and double-digit prices (0.50-99.99)</p>
+                    </div>
+                    <div class="mode-check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                
+                <!-- Year Mode -->
+                <div class="mode-option active" data-mode="year">
+                    <div class="mode-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <div class="mode-info">
+                        <h3 data-key="yearMode">Year</h3>
+                        <p class="mode-description" id="yearDescription">All years</p>
+                    </div>
+                    <div class="mode-check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mode-availability-info">
+                <i class="fas fa-info-circle"></i>
+                <span data-key="availabilityInfo">Some modes are disabled based on your selected difficulty level</span>
+            </div>
+            
+            <button class="btn-primary" id="startPracticeBtn" data-key="startPractice">
+                Start Practice
+            </button>
+        </section>
+        
+        <!-- Practice Screen -->
+        <section id="practiceScreen" class="screen">
+            <!-- Mobile Back Button - First element after header -->
+            <button class="btn-back mobile-only" id="mobileBackToModeSelection">
+                <i class="fas fa-arrow-left"></i>
+                <span data-key="back">Back</span>
+            </button>
+            
+            <div class="screen-header">
+                <!-- Desktop Back Button -->
+                <button class="btn-back desktop-only" id="backToModeSelection">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-key="back">Back</span>
+                </button>
+                <h2 data-key="practiceSession">Practice Session</h2>
+                <div class="practice-stats">
+                    <div class="stat correct-stat">
+                        <i class="fas fa-check-circle"></i>
+                        <span id="correctCount">0</span>
+                    </div>
+                    <div class="stat incorrect-stat">
+                        <i class="fas fa-times-circle"></i>
+                        <span id="incorrectCount">0</span>
+                    </div>
+                    <div class="stat difficulty-stat" id="currentDifficultyStat">
+                        <i class="fas fa-chart-line"></i>
+                        <span id="currentDifficultyStatText">Easy</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="practice-container">
+                <div class="audio-controls">
+                    <button class="audio-btn" id="playAudioBtn">
+                        <i class="fas fa-play"></i>
+                        <span data-key="playSound">Play Sound</span>
+                    </button>
+                    
+                    <div class="speed-control">
+                        <label for="playbackSpeed" data-key="playbackSpeed">Playback Speed:</label>
+                        <div class="speed-buttons">
+                            <button class="speed-btn" data-speed="0.5">0.5x</button>
+                            <button class="speed-btn" data-speed="0.7">0.7x</button>
+                            <button class="speed-btn active" data-speed="1.0">1x</button>
+                            <button class="speed-btn" data-speed="1.2">1.2x</button>
+                            <button class="speed-btn" data-speed="1.5">1.5x</button>
+                            <button class="speed-btn" data-speed="2.0">2x</button>
+                        </div>
+                    </div>
+                    
+                    <div class="current-speed-display">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span id="currentSpeedText">1x</span>
+                    </div>
+                </div>
+                
+                <div class="answer-section">
+                    <div class="current-mode" id="currentModeDisplay">
+                        <i class="fas fa-sort-numeric-up"></i>
+                        <span data-key="integerMode">Integers</span>
+                        <span class="difficulty-indicator" id="currentDifficultyIndicator">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Easy</span>
+                        </span>
+                    </div>
+                    
+                    <div class="input-container" id="inputContainer">
+                        <input type="text" id="answerInput" placeholder="Enter your answer..." autocomplete="off" dir="ltr">
+                        <button class="btn-submit" id="submitAnswerBtn" data-key="submitAnswer">Check Answer</button>
+                    </div>
+                    
+                    <div class="sample-answer" id="sampleAnswerContainer">
+                        <i class="fas fa-lightbulb"></i>
+                        <span data-key="sampleAnswer">Sample Answer:</span>
+                        <span id="sampleAnswerText">123</span>
+                    </div>
+                    
+                    <div class="feedback" id="feedback">
+                        <div class="feedback-content">
+                            <i class="fas fa-info-circle"></i>
+                            <span data-key="inputPrompt">Enter the number you heard in the box above</span>
+                        </div>
+                    </div>
+                    
+                    <div class="correct-answer" id="correctAnswerContainer">
+                        <span data-key="correctAnswer">Correct Answer:</span>
+                        <span id="correctAnswerText"></span>
+                    </div>
+                </div>
+                
+                <div class="navigation-controls">
+                    <button class="btn-next" id="nextQuestionBtn">
+                        <i class="fas fa-arrow-right"></i>
+                        <span data-key="nextQuestion"></span>
+                    </button>
+                </div>
+                
+                <div class="progress-info">
+                    <div class="question-counter">
+                        Question <span id="currentQuestion">1</span>
+                    </div>
+                    <div class="difficulty-progress" id="difficultyProgress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill" style="width: 33%"></div>
+                        </div>
+                        <span class="progress-text">Difficulty: <span id="currentProgressText">Easy</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo-container">
+                    <img src="img/logo.png" alt="Zahlix Logo" class="footer-logo">
+                </div>
+                <div class="footer-brand-info">
+                    <h3>ZAHLIX</h3>
+                    <p class="footer-tagline">German Numbers Practice</p>
+                    <p class="footer-description">Improve your German listening skills with interactive number practice</p>
+                </div>
+            </div>
+            
+            <div class="footer-creator">
+                <h4 data-key="creator">Creator</h4>
+                <p class="creator-name">Masoud Arabzadeh</p>
+                <div class="social-links">
+                    <a href="https://t.me/mrx2024" class="social-link telegram" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-telegram"></i>
+                        <span>Telegram</span>
+                    </a>
+                    <a href="https://github.com/masoudarabzade" class="social-link github" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-project">
+                <h4 data-key="project">Project</h4>
+                <div class="github-stats">
+                    <button class="github-star" id="githubStarBtn">
+                        <i class="far fa-star"></i>
+                        <span data-key="starOnGitHub">Star on GitHub</span>
+                        <span class="star-count" id="starCount">0</span>
+                    </button>
+                    <a href="https://github.com/masoudarabzade/zahlix" class="github-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span data-key="viewRepository">View Repository</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear">2026</span> <strong>ZAHLIX</strong>. <span data-key="allRightsReserved">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <!-- Audio Player (hidden) -->
+    <audio id="audioPlayer" preload="auto"></audio>
+
+    <!-- JavaScript Files -->
+    <script src="lang/translations.js"></script>
+    <script src="file-list.js"></script>
+    <script src="sounds.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
