@@ -1,21 +1,33 @@
-# 🇩🇪 ZAHLIX - Deutsche Zahlen hören und lernen
-# 🇬🇧 ZAHLIX - German Numbers Listening Practice
-# 🇮🇷 ZAHLIX - تمرین شنیداری اعداد آلمانی
+<!-- Title - LTR for badges -->
+<div dir="ltr">
+
+# ZAHLIX - German Numbers Practice
 
 [![Live Demo](https://img.shields.io/badge/demo-online-green?style=for-the-badge&logo=vercel)](https://zahlix.42web.io)
 [![GitHub stars](https://img.shields.io/github/stars/masoudarabzade/zahlix?style=for-the-badge&logo=github)](https://github.com/masoudarabzade/zahlix/stargazers)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 [![Mobile Friendly](https://img.shields.io/badge/Responsive-Yes-brightgreen?style=for-the-badge)](https://zahlix.42web.io)
 
+</div>
+
+<!-- Separator -->
 ---
 
-## 🌐 **Live Demo | نمایش زنده | Live-Demo**
+<!-- Live Demo - LTR -->
+<div dir="ltr">
+
+## 🌐 Live Demo | Live-Demo | نمایش زنده
 
 **👉 [https://zahlix.42web.io](https://zahlix.42web.io)**
 
+</div>
+
 ---
 
-## 🇩🇪 **Deutsch** (German)
+<!-- German Section - LTR -->
+<div dir="ltr">
+
+## 🇩🇪 Deutsch
 
 ### 📌 Über das Projekt
 
@@ -47,9 +59,14 @@
 
 👉 **[https://zahlix.42web.io](https://zahlix.42web.io)** – Jetzt kostenlos testen!
 
+</div>
+
 ---
 
-## 🇬🇧 **English**
+<!-- English Section - LTR -->
+<div dir="ltr">
+
+## 🇬🇧 English
 
 ### 📌 About the Project
 
@@ -81,9 +98,14 @@
 
 👉 **[https://zahlix.42web.io](https://zahlix.42web.io)** – Try it now for free!
 
+</div>
+
 ---
 
-## 🇮🇷 **فارسی** (Persian)
+<!-- Persian Section - RTL -->
+<div dir="rtl">
+
+## 🇮🇷 فارسی
 
 ### 📌 درباره پروژه
 
@@ -115,22 +137,33 @@
 
 👉 **[https://zahlix.42web.io](https://zahlix.42web.io)** – همین حالا رایگان امتحان کنید!
 
+</div>
+
 ---
 
-## 🛠️ **Technologie-Stack | Technology Stack | تکنولوژی‌ها**
+<!-- Tech Stack - LTR -->
+<div dir="ltr">
 
-| **Bereich / Area / بخش** | **Technologie / Technology / تکنولوژی** |
-|--------------------------|----------------------------------------|
+## 🛠️ Technologie-Stack | Technology Stack | تکنولوژی‌ها
+
+| Bereich / Area / بخش | Technologie / Technology / تکنولوژی |
+|---------------------|-------------------------------------|
 | **Frontend** | HTML5, CSS3, JavaScript (ES6+) |
 | **Styling** | CSS Variables, Flexbox, Grid |
 | **Icons** | Font Awesome 6 |
 | **Fonts** | Inter, Vazir (Persian) |
+| **Hosting** | InfinityFree (PHP 8.x) |
 | **Version Control** | Git, GitHub |
 | **API** | GitHub REST API (Star counter) |
 
+</div>
+
 ---
 
-## 📁 **Projektstruktur | Project Structure | ساختار پروژه**
+<!-- Project Structure - LTR (code block should be LTR) -->
+<div dir="ltr">
+
+## 📁 Projektstruktur | Project Structure | ساختار پروژه
 
 ```
 zahlix/
@@ -152,15 +185,20 @@ zahlix/
 ├── 📁 img/                   # Bilder / Images / تصاویر
 │   ├── 📄 logo.png
 │   └── 📄 icon.ico
-└── 📁 server/                # PHP API (optional)
+└── 📁 server/                # PHP API
     └── 📄 get-files.php
 ```
 
+</div>
+
 ---
 
-## 🚀 **Lokale Installation | Local Setup | نصب محلی**
+<!-- Local Setup - German/English LTR, Persian RTL -->
+<div dir="ltr">
 
-### 🇩🇪 **Deutsch**
+## 🚀 Lokale Installation | Local Setup
+
+### 🇩🇪 Deutsch
 1. Repository klonen:
    ```bash
    git clone https://github.com/masoudarabzade/zahlix.git
@@ -169,7 +207,7 @@ zahlix/
 2. Mit einem lokalen Server öffnen (z.B. Live Server in VS Code)
 3. Oder Datei direkt im Browser öffnen
 
-### 🇬🇧 **English**
+### 🇬🇧 English
 1. Clone the repository:
    ```bash
    git clone https://github.com/masoudarabzade/zahlix.git
@@ -178,7 +216,11 @@ zahlix/
 2. Open with a local server (e.g., Live Server in VS Code)
 3. Or open the HTML file directly in your browser
 
-### 🇮🇷 **فارسی**
+</div>
+
+<div dir="rtl">
+
+### 🇮🇷 فارسی
 ۱. کلون کردن مخزن:
    ```bash
    git clone https://github.com/masoudarabzade/zahlix.git
@@ -187,51 +229,103 @@ zahlix/
 ۲. باز کردن با سرور محلی (مثل Live Server در VS Code)
 ۳. یا باز کردن مستقیم فایل HTML در مرورگر
 
+</div>
+
 ---
 
-## 🤝 **Beitragen | Contributing | مشارکت**
+<!-- Contributing - Mixed RTL/LTR -->
+<div dir="ltr">
+
+## 🤝 Beitragen | Contributing
 
 🇩🇪 Beiträge sind willkommen! Bitte erstelle einen Issue oder Pull Request.
 
 🇬🇧 Contributions are welcome! Please open an issue or pull request.
 
+</div>
+
+<div dir="rtl">
+
 🇮🇷 مشارکت شما پذیرفته می‌شود! لطفاً Issue یا Pull Request ایجاد کنید.
+
+</div>
 
 ---
 
-## 📄 **Lizenz | License | مجوز**
+<!-- License - Mixed RTL/LTR -->
+<div dir="ltr">
+
+## 📄 Lizenz | License
 
 **MIT License** – Siehe [LICENSE](LICENSE) Datei für Details.
 
 **MIT License** – See [LICENSE](LICENSE) file for details.
 
+</div>
+
+<div dir="rtl">
+
 **مجوز MIT** – برای جزئیات به فایل [LICENSE](LICENSE) مراجعه کنید.
+
+</div>
 
 ---
 
-## 👨‍💻 **Entwickler | Developer | توسعه‌دهنده**
+<!-- Developer - LTR for badges, RTL for Persian -->
+<div dir="ltr">
+
+## 👨‍💻 Entwickler | Developer
 
 **Masoud Arabzadeh**
 
 [![Telegram](https://img.shields.io/badge/Telegram-@mrx2024-26A5E4?style=flat-square&logo=telegram)](https://t.me/mrx2024)
 [![GitHub](https://img.shields.io/badge/GitHub-@masoudarabzade-181717?style=flat-square&logo=github)](https://github.com/masoudarabzade)
 
----
+</div>
 
-## ⭐ **GitHub Sterne | GitHub Stars | ستاره‌های گیت‌هاب**
+<div dir="rtl">
 
-Wenn dir dieses Projekt gefällt, gib ihm bitte einen ⭐ auf GitHub!
+**مسعود عرب‌زاده**
 
-If you like this project, please give it a ⭐ on GitHub!
-
-اگر این پروژه را دوست دارید، لطفاً در گیت‌هاب به آن ⭐ دهید!
-
-**[👉 Jetzt Stern geben | Give a Star | ستاره دادن](https://github.com/masoudarabzade/zahlix)**
+</div>
 
 ---
+
+<!-- GitHub Stars - Mixed -->
+<div dir="ltr">
+
+## ⭐ GitHub Stars
+
+🇩🇪 Wenn dir dieses Projekt gefällt, gib ihm bitte einen ⭐ auf GitHub!
+
+🇬🇧 If you like this project, please give it a ⭐ on GitHub!
+
+**[👉 Star on GitHub](https://github.com/masoudarabzade/zahlix)**
+
+</div>
+
+<div dir="rtl">
+
+🇮🇷 اگر این پروژه را دوست دارید، لطفاً در گیت‌هاب به آن ⭐ دهید!
+
+**[👉 ستاره دادن](https://github.com/masoudarabzade/zahlix)**
+
+</div>
+
+---
+
+<!-- Footer - Mixed -->
+<div dir="ltr">
 
 **🇩🇪 Viel Spaß beim Lernen!**  
 **🇬🇧 Happy Learning!**  
-**🇮🇷 یادگیری لذت‌بخشی داشته باشید!** 🚀 
+
+</div>
+
+<div dir="rtl">
+
+**🇮🇷 یادگیری لذت‌بخشی داشته باشید!** 🚀
+
+</div> 
  
- 
+
