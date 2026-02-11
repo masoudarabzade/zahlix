@@ -125,7 +125,6 @@
 | **Styling** | CSS Variables, Flexbox, Grid |
 | **Icons** | Font Awesome 6 |
 | **Fonts** | Inter, Vazir (Persian) |
-| **Hosting** | InfinityFree (PHP 8.x) |
 | **Version Control** | Git, GitHub |
 | **API** | GitHub REST API (Star counter) |
 
@@ -153,7 +152,7 @@ zahlix/
 ├── 📁 img/                   # Bilder / Images / تصاویر
 │   ├── 📄 logo.png
 │   └── 📄 icon.ico
-└── 📁 api/                   # PHP API (optional)
+└── 📁 server/                # PHP API (optional)
     └── 📄 get-files.php
 ```
 
@@ -233,5 +232,6 @@ If you like this project, please give it a ⭐ on GitHub!
 
 **🇩🇪 Viel Spaß beim Lernen!**  
 **🇬🇧 Happy Learning!**  
-**🇮🇷 یادگیری لذت‌بخشی داشته باشید!** 🚀#   z a h l i x  
+**🇮🇷 یادگیری لذت‌بخشی داشته باشید!** 🚀 
+ 
  
